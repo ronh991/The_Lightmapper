@@ -811,7 +811,7 @@ class TLM_BuildEnvironmentProbes(bpy.types.Operator):
                     for val in positions:
                         cam.rotation_euler = positions[val]
                         
-                        filename = os.path.join(directory, val) + "_" + camobj_name + ".hdr"
+                        filename = os.path.join(directory, val) + "___" + camobj_name + ".hdr"  # added three underscore - ronh991
                         bpy.context.scene.render.filepath = filename
                         print("Writing out: " + val)
                         bpy.ops.render.render(write_still=True)

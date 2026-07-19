@@ -48,7 +48,7 @@ class TLM_CV_Filtering:
                 if bpy.context.scene.TLM_SceneProperties.tlm_verbose:
                     print("Filtering: " + os.path.basename(file_input))
 
-                obj_name = os.path.basename(file_input).split("_")[0]
+                obj_name = os.path.basename(file_input).split("___")[0]  # added three underscore - ronh991
 
                 #SEAM TESTING# #####################
 

@@ -45,7 +45,7 @@ class TLM_Shader_Filtering:
 
                 print("Filtering: " + os.path.basename(file_input))
 
-                obj_name = os.path.basename(file_input).split("_")[0]
+                obj_name = os.path.basename(file_input).split("___")[0]  # added three underscore - ronh991
 
                 if bpy.data.objects[obj_name].TLM_ObjectProperties.tlm_mesh_filter_override:
 

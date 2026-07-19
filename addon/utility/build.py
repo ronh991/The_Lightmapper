@@ -1177,8 +1177,8 @@ def naming_check():
 
                 if obj.name != "":
 
-                    if "_" in obj.name:
-                        obj.name = obj.name.replace("_",".")
+                    #if "_" in obj.name:   # removed ronh991
+                    #    obj.name = obj.name.replace("_",".")
                     if " " in obj.name:
                         obj.name = obj.name.replace(" ",".")
                     if "[" in obj.name:
@@ -1195,8 +1195,8 @@ def naming_check():
                         obj.name = obj.name.replace("/",".")
 
                     for slot in obj.material_slots:
-                        if "_" in slot.material.name:
-                            slot.material.name = slot.material.name.replace("_",".")
+                        #if "_" in slot.material.name:  # removed ronh991
+                        #    slot.material.name = slot.material.name.replace("_",".")
                         if " " in slot.material.name:
                             slot.material.name = slot.material.name.replace(" ",".")
                         if "[" in slot.material.name:

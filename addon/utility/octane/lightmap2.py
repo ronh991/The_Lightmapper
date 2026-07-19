@@ -51,7 +51,7 @@ def bake():
                     image_settings.file_format = "HDR"
                     image_settings.color_depth = '32'
 
-                    filename = os.path.join(directory, "LM") + "_" + obj.name + ".hdr"
+                    filename = os.path.join(directory, "LM") + "___" + obj.name + ".hdr"  # added three underscore - ronh991
                     bpy.context.scene.render.filepath = filename
 
                     resolution = int(obj.TLM_ObjectProperties.tlm_mesh_lightmap_resolution)
